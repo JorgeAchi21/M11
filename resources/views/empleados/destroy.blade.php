@@ -7,7 +7,7 @@
 
 <div class="jumbotron">
     
-  <p class="text-center h3 text-primary">Registro eliminado:</p>
+  <p class="text-center h3 text-primary">Employee eliminated:</p>
 
   <p>El registro con id: <strong>{{$id}}</strong> ha sido eliminado correctamente...</p>
 
