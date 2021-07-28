@@ -9,6 +9,7 @@ class peopleGest extends Model
 {
     use HasFactory;
     //...conexion a la bbdd..???
+    
     protected $table="people"; //la tabla no se llama igual que el modelo
 
     //protected $guarded = [''];

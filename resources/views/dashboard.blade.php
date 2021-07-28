@@ -13,9 +13,11 @@
                     You have logged in.
                 </div>
                 <div class="p-6 bg-white border-b border-gray-200">
+                    
                     <br>
                     <a href="{{route('home')}}" class="text-indigo-700 btn btn btn-primary">Regresar al home...</a>
                     <br>
+
                 </div>
             </div>
         </div>

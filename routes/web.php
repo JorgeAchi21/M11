@@ -23,35 +23,44 @@ Route::get('/', function () {
 */
 
 Route::get('/', [peopleGestController::class, 'home'])
+    ->middleware('mostrarFecha')
     ->name('home');
 
 //SHOW - LIST
 Route::get('/empleados/show', [peopleGestController::class, 'show'])
+    ->middleware('mostrarFecha')
     ->name('show');
 
 Route::get('/empleados/show/{id}', [peopleGestController::class, 'showid'])
+    ->middleware('mostrarFecha')
     ->name('empleados.showid');
 
 //FIND BY
 Route::get('/empleados/find', [peopleGestController::class, 'find'])
+    ->middleware('mostrarFecha')
     ->name('empleados.find');
 
 //CREATE
 Route::get('/empleados/create', [peopleGestController::class, 'create'])
+    ->middleware('mostrarFecha')
     ->name('empleados.create');
     
 Route::post('/empleados/create', [peopleGestController::class, 'createStore'])
+    ->middleware('mostrarFecha')
     ->name('empleados.createStore');
 
 //EDIT
 Route::get('empleados/edit/{id}', [peopleGestController::class, 'edit'])
+    ->middleware('mostrarFecha')
     ->name('empleados.edit');
 
 Route::put('/empleados/edit/{id}', [peopleGestController::class, 'editStore'])
+    ->middleware('mostrarFecha')
     ->name('empleados.editStore');
 
 //DELETE
 Route::delete('empleados/delete/{id} ', [peopleGestController::class, 'destroy'])
+    ->middleware('mostrarFecha')
     ->name('empleados.destroy');
 
 

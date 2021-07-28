@@ -24,7 +24,6 @@ class PeopleGest extends Migration
             $table -> text ('aditional_info')->nullable();
             $table -> timestamps(); //hora y fecha de la última actualización en 2 cmps: created_at, updated_at
           });
-          
     }
 
     /**
